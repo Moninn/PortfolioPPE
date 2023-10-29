@@ -12,27 +12,50 @@
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/PortfolioPPE/styles.css" />
     <title>Ly Moninn</title>
   </head>
   <body class="base" id="top">
     <header class="header center">
       <h3>
-        <a href="index.html" class="link">LM.</a>
+        <a href="/PortfolioPPE/index.html" class="link link--logo">LM.</a>
       </h3>
+      <button id="modeNuitToggle">
+        <i id="iconeJour" class="fas fa-sun icone-jour"></i>
+        <i id="iconeNuit" class="fas fa-moon icone-nuit" style="display: none;"></i>
+      </button>
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Parcours</a>
+            <a class="link link--nav" href="/PortfolioPPE/Pages/Formation.html">Formation</a>
+            <ul id="submenu">
+              <li>
+                <a href="/PortfolioPPE/Pages/Formation.html#lesParcours">Parcours Scolaire</a>
+              </li>
+              <li>
+                <a href="/PortfolioPPE/Pages/Formation.html#stages">Stages</a>
+              </li>
+              <li>
+                <a href="/PortfolioPPE/Pages/Formation.html#projetsPro">Projets professionnel</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projets</a>
+            <a class="link link--nav" href="/PortfolioPPE/index.html#projects">Projets</a>
+            <ul id="submenu">
+              <li>
+                <a href="/PortfolioPPE/Pages/Projets/Projet1.html">OID</a>
+              </li>
+              <li>
+                <a href="/PortfolioPPE/Pages/Projets/Projet2.html">Site Films</a>
+              </li>
+              <li>
+                <a href="/PortfolioPPE/Pages/Projets/Projet3.html">Projet Stage</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Compétences</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="/Portfolio/PortfolioPPE/Pages/Projet_Pro.html">Projet professionnel</a>
+            <a class="link link--nav" href="/PortfolioPPE/index.html#skills">Compétences</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="/Portfolio/PortfolioPPE/Pages/Veille.html">Veille technologique</a>
@@ -41,7 +64,7 @@
             <a class="link link--nav" href="/Portfolio/PortfolioPPE/Pages/BTS_SIO.html">BTS SIO</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
+            <a class="link link--nav" href="/PortfolioPPE/index.html#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -56,10 +79,11 @@
         <p class="about__desc">
             Bonjour, je suis Ly Moninn, j'ai 18 ans et je poursuis actuellement mes études en BTS SIO option SLAM au sein du lycée Saint-Denis à Annonay.        
         </p>
-
+        
+        <h2>Mon CV</h2>
         <div class="about__contact center">
-          <a href="/Portfolio/PortfolioPPE/CV/CV Moninn LY.pdf">
-            <span class="btn btn--outline">CV</span>
+          <a href="/PortfolioPPE/CV/CV Moninn LY.pdf">
+            <span class="btn btn--outline">ici</span>
           </a>
         </div>
       </div>
@@ -149,6 +173,7 @@
           <li class="skills__list-item btn btn--plain">C#</li>
           <li class="skills__list-item btn btn--plain">MySQL</li>
           <li class="skills__list-item btn btn--plain">PHP</li>
+          <li class="skills__list-item btn btn--plain">WebFlow</li>
         </ul>
       </section>
 
@@ -162,19 +187,26 @@
     </main>
 
     <footer class="footer">
-      <a href="https://github.com/Moninn" class="link footer__link">
-        Par Ly Moninn
-      </a>
-  
-    <div class="about__social">
-    <a href="https://github.com/Moninn" aria-label="github" class="link link--icon">
-      <i aria-hidden="true" class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/moninn-ly-68698a24b/" aria-label="linkedin" class="link link--icon">
-      <i aria-hidden="true" class="fab fa-linkedin"></i>
-    </a>
-    </div>
+      <div class="footer__content">
+        <p>&copy; 2023 Ly Moninn</p>
+        <div class="footer__social">
+          <a href="https://github.com/Moninn" aria-label="GitHub" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/moninn-ly-68698a24b/" aria-label="LinkedIn" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="footer__links">
+          <a href="/PortfolioPPE/Pages/Formation.html">Formation</a>
+          <a href="/PortfolioPPE/index.html#projects">Projets</a>
+          <a href="/PortfolioPPE/index.html#skills">Compétences</a>
+          <a href="/Portfolio/PortfolioPPE/Pages/Veille.html">Veille technologique</a>
+          <a href="/Portfolio/PortfolioPPE/Pages/BTS_SIO.html">BTS SIO</a>
+          <a href="mailto:1moninnly@gmail.com">Contact</a>
+        </div>
+      </div>
     </footer>
+    <script src="/PortfolioPPE/script.js"></script>
   </body>
 </html>
