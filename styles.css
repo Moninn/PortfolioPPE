@@ -26,7 +26,7 @@ body {
   background-color: var(--clr-bg);
   background: url('/PortfolioPPE/Images/background.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: right bottom; 
   transition: background-image 0.5s ease;
 }
 
@@ -308,7 +308,7 @@ mise en page
 
 .left {
   display: flex;
-  align-items:flex-"sta"rt;
+  align-items:flex-start;
 }
 
 .header {
@@ -317,7 +317,6 @@ mise en page
   background: url('/PortfolioPPE/Images/footer-img.jpg');
   background-size: cover;
   background-position: center center;
-  box-shadow: 0 5px 20px rgba(95, 95, 95, 0.8);
 }
 
 main {
@@ -432,7 +431,11 @@ main {
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+  color: var(--clr-primary);
+  border-right: solid 1px var(--clr-fg-alt);
+  border-left: solid 1px var(--clr-fg-alt);
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .project .link--projects {
@@ -553,14 +556,88 @@ main {
   color: var(--clr-primary);
 }
 
+/* Projet */
+
+.projet__context {
+  background-color: var(--clr-bg-alt-alt);
+  padding: 1em;
+  box-shadow: var(--shadow);
+}
+
+.projet1 h2{
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.about__context {
+  margin-top: 2.4em;
+}
+
+.projet__reponse {
+  margin-top: 8em;
+}
+
+.projet__reponse h2{
+  border-bottom: #2978b5 solid 4px;
+  padding-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.projet__reponse h2{
+  margin-bottom: 1em;
+}
+
+.projet__objectif{
+  padding-top: 2.5em;
+}
+
+img.framed {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out; 
+  margin-bottom: 7em;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.framed {
+  transform: translateY(0); 
+  box-shadow:
+  -50px -50px 0 -40px var(--clr-primary),
+  50px 50px 0 -40px var(--clr-primary);
+}
+
+img .framed:hover {
+  transform: translateY(-10px); 
+}
+
+.screenshot-row {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  text-align: center; 
+}
+
+
+.screenshot-item p {
+  font-weight: bold;
+  margin: 0;
+}
+
 /* Footer */
 
 .footer {
-  padding: 1em;
-  margin-top: 4em;
+  padding: 1em;justify-content: space-between;  margin-top: 4em;
   text-align: center;
   background: rgb(0, 0, 0);
-  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__link {
@@ -589,6 +666,50 @@ main {
 
 .footer__links a:hover {
   color: white; 
+}
+
+/* BTS SIO */
+
+.specialties__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.specialty {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  background-color: var(--clr-bg-alt-alt);
+  color: var(--clr-fg-alt);
+}
+
+.specialty h3 {
+  color: var(--clr-primary);
+}
+
+.specialty:hover {
+  transform: translateY(-7px); /* Effet de lévitation au survol */
+}
+
+.specialty__description {
+  margin-top: 1em;
+}
+
+.specialty__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.specialty__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
 }
 
 /*--
