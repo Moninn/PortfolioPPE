@@ -1,0 +1,95 @@
+/* Veille */
+
+main {
+  padding-top: 20px;
+  background-color: var(--clr-bg-alt-alt);
+  box-shadow: var(--shadow);
+}
+
+.veilles h1{
+    border-bottom: #2978b5 solid 4px;
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.article {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.voir-plus {
+  display: inline-block;
+  padding: 0.8em 1.4em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 10px;
+  margin-left: 70%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  grid-gap: 2em;
+  justify-content: center;
+  padding: 4em;
+}
+
+.square:hover {
+  -webkit-transform: translate(20px, -10px);
+  -ms-transform: translate(10px, -10px);
+  transform: translate(10px, -10px);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.square {
+  position: relative;
+  width: 460px;
+  height: 430px;
+  background: white;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mask {
+  clip: rect(0px, 460px, 220px, 0px);
+  border-radius: 4px;
+  position: absolute;
+  width: 100%; 
+}
+
+img{
+  width: 460px;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 10px;
+  color: #555;
+}
+
+.h1{
+  margin: auto;
+  text-align: left;
+  margin-top: 240px;
+  padding-left: 30px;
+  font-size: 24px;
+  color: #2978b5;
+}
+
+.square p{
+ text-align: justify; 
+ padding-left: 30px;
+ padding-right: 30px;
+ font-size: 12px;
+ color: black;
+ line-height: 18px;
+}
