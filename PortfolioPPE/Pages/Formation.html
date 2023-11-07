@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/timeLine.css">
+    <title>Ly Moninn</title>
+  </head>
+  <body class="base" id="top">
+    <header class="header center">
+      <h3>
+        <a href="../index.html" class="link link--logo">LM.</a>
+      </h3>
+      <button id="modeNuitToggle">
+        <i id="iconeJour" class="fas fa-sun icone-jour"></i>
+        <i id="iconeNuit" class="fas fa-moon icone-nuit" style="display: none;"></i>
+      </button>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../Pages/Formation.html">Formation</a>
+            <ul id="submenu">
+              <li>
+                <a href="../Pages/Formation.html#lesParcours">Parcours Scolaire</a>
+              </li>
+              <li>
+                <a href="../Pages/Formation.html#stages">Stages</a>
+              </li>
+              <li>
+                <a href="../Pages/Formation.html#projetsPro">Projets professionnel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../index.html#projects">Projets</a>
+            <ul id="submenu">
+              <li>
+                <a href="../Pages/Projets/Projet1.html">OID</a>
+              </li>
+              <li>
+                <a href="../Pages/Projets/Projet2.html">Site Films</a>
+              </li>
+              <li>
+                <a href="../Pages/Projets/Projet3.html">Projet Stage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../index.html#skills">Compétences</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../Pages/Veille.html">Veille technologique</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../Pages/BTS_SIO.html">BTS SIO</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    <div class="about left">
+        <h1>Ma <span class="about__name">Formation</span></h1>
+      <p class="about__desc">
+        Explorez ma page de formation pour découvrir mon parcours académique, mes expériences de stage, et mon projet professionnel. 
+      </p>
+    </div>
+
+    <!-- Parcours -->
+    <section id="LesParcours" class="section lesParcours">
+      <h2 class="section__title">Mon Parcours Scolaire</h1>
+      <div class="parcours__grid">
+        <div class="parcours">
+          <h3>Collège les perrières - Annonay (2013)</h3>    
+          <ul class="parcours__stack">
+          <li class="parcours__img"><img src="../Images/logo_perrieres.png" alt="logo collège les perrières"></li>
+          </ul>
+        </div>
+
+        <div class="parcours">
+          <h3>Lycée Boissy d'Anglas - Annonay (2019)</h3>    
+          <ul class="parcours__stack">
+          <p class="parcours__description">
+            BAC Pro MELEC
+          </p>
+          <li class="parcours__img"><img src="../Images/logo_boissy.png" alt="logo lycée boissy d'anglas"></li>
+          </ul>
+        </div>
+
+        <div class="parcours">
+          <h3>Institut supérieur Saint-Denis - Annonay (2022)</h3>    
+          <ul class="parcours__stack">
+          <p class="parcours__description">
+            BTS SIO option SLAM
+          </p>
+          <li class="parcours__img"><img src="../Images/logo_saint_denis.png" alt="logo institut supérieur saint denis"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stages -->
+    <section id="stages" class="section stages">
+      <h2 class="section__title">Mes Stages</h2>  
+
+      <ul class="timeline">
+      
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">EVOLU-SUN - ANNONAY</span>
+              <span class="time-wrapper"><span class="time">2023 - 6 semaines</span></span>
+            </div>
+            <div class="desc">              
+              <strong>Stagiaire dans le secteur informatique</strong>
+              <br>- Refonte du site web de l’entreprise à l’aide de Webflow
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">CANSON - ANNONAY</span>
+              <span class="time-wrapper"><span class="time">2021 - 4 semaines</span></span>
+            </div>
+            <div class="desc">              
+              <strong>Stagiaire en Maintenance</strong>
+              <p>- Dépanner des prises électriques</p>
+              <p>- Vérifier et lister des armoires électriques</p>
+            </div>
+          </div>
+        </li>
+      
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">IVECO BUS - ANNONAY</span>
+              <span class="time-wrapper"><span class="time">2021 - 4 semaines</span></span>
+            </div>
+            <div class="desc">              
+              <strong>Stagiaire dans le secteur du poste de conduite</strong>
+              <p>- Participer à la fabrication et l’installation du poste de conduite (volant, pédales de conduite, tapis, etc.)</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">CANSON - ANNONAY</span>
+              <span class="time-wrapper"><span class="time">2021 - 4 semaines</span></span>
+            </div>
+            <div class="desc">
+              <strong>Stagiaire en Maintenance</strong>
+              <p>- des prises électriques </p>
+              <p>- Vérifier et lister des armoires électriques</p>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+    </section>
+
+    <!-- Projet professionnel -->
+    <section id="projetsPro" class="section projetsPro">
+      <h2 class="section__title">Projets professionnels</h2>
+    </section>
+      <div class="carte">
+        <div class="contenu">
+            <h3>Plan de carrière</h3>
+            <p>Après mon BTS SIO, je souhaite poursuivre une licence professionnelle en informatique. Cette décision s'appuie sur l'importance d'acquérir une expérience pratique grâce à des stages et projets en entreprise. <strong>Cette expérience enrichira mon CV et me donnera un avantage sur le marché du travail après mes études.</strong></p><br>
+            <p>La licence professionnelle me permettra de développer une expertise avancée, d'affiner mes compétences techniques et de travailler sur des projets concrets. De plus, elle <strong>m'aidera à comprendre les évolutions constantes de l'industrie informatique, à établir un réseau professionnel solide et à rencontrer des mentors.</strong></p><br>
+            <p>En résumé, cette licence professionnelle est une étape stratégique pour compléter ma formation académique et me préparer à une carrière réussie dans l'informatique.</p><br>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p>&copy; 2023 Ly Moninn</p>
+        <div class="footer__social">
+          <a href="https://github.com/Moninn" aria-label="GitHub" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/moninn-ly-68698a24b/" aria-label="LinkedIn" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="footer__links">
+          <a href="../Pages/Formation.html">Formation</a>
+          <a href="../index.html#projects">Projets</a>
+          <a href="../index.html#skills">Compétences</a>
+          <a href="../Pages/Veille.html">Veille technologique</a>
+          <a href="../Pages/BTS_SIO.html">BTS SIO</a>
+          <a href="mailto:1moninnly@gmail.com">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
+
